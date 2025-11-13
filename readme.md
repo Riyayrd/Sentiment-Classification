@@ -6,21 +6,8 @@ It systematically evaluates variations: activation functions (relu,tanh,sigmoid)
 
 ## Repo structure
 
-├── data/
-│   └── processed_seq25/ processed_seq50/ processed_seq100/   # created by preprocess.py
-├── src/
-│   ├── preprocess.py
-│   ├── models.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── utils.py
-├── results/
-│   ├── models/
-│   ├── history/
-│   └── metrics.csv
-├── run_experiments.py
-├── requirements.txt
-└── README.md
+<img width="752" height="315" alt="image" src="https://github.com/user-attachments/assets/88d8fadd-ad65-4053-9f0b-7e76fbba70b3" />
+
 
 ## Setup
 1. Create a python venv and install dependencies:
