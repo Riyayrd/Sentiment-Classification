@@ -1,0 +1,2 @@
+Model,Architecture,Activation,Optimizer,Seq Length,Grad Clipping,Accuracy,F1,Epoch Time (s),model_path,history_path,device_info
+test_LSTM_tanh_Adam_seq50,LSTM,tanh,Adam,50,Yes,0.76992,0.7699199278468893,21.609731316566467,results/models/test_LSTM_tanh_Adam_seq50.pt,results/models/test_LSTM_tanh_Adam_seq50_history.pkl,"{'device': 'cpu', 'cuda_available': False, 'ram_gb': 'unknown'}"
