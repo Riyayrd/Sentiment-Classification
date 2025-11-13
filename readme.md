@@ -5,6 +5,7 @@ This repository implements multiple RNN-based architectures (RNN, LSTM, BiLSTM) 
 It systematically evaluates variations: activation functions (relu,tanh,sigmoid), optimizers (Adam,SGD,RMSProp), sequence lengths (25,50,100), and gradient clipping (Yes/No).
 
 ## Repo structure
+
 ├── data/
 │   └── processed_seq25/ processed_seq50/ processed_seq100/   # created by preprocess.py
 ├── src/
