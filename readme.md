@@ -31,19 +31,28 @@ It systematically evaluates variations: activation functions (relu,tanh,sigmoid)
    ```
 
 2. Prepare Data
-    ```python src/preprocess.py --seq_len 50 --out_dir data/processed_seq50
+    ```bash
+    python src/preprocess.py --seq_len 50 --out_dir data/processed_seq50
     ```
 
 Repeat for seq_len 25 and 100 or use the driver (below)
 
 Quick Dev Run
 # Create all three processed datasets
-python run_experiments.py --epochs 1   # this will invoke preprocess and run a small subset quickly (set epochs low for dev)
-
+```bash
+python run_experiments.py --epochs 10   # this will invoke preprocess and run a small subset quickly (set epochs low for dev)
+```
 
 3. Full Experiment
 
-```python run_experiments.py --epochs 5
+```bash
+PYTHONPATH=src python run_experiments.py \
+  --data_dir data/imdb/processed \
+  --save_dir results \
+  --epochs 10
 ```
 
 Adjust epochs to your budget. For final results, set epochs to 5-10 (longer gives better models).
+
+
+4. Results can be seen in the results folder
